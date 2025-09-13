@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Finger-Joint Detector</title>
+  <style>
+    body { font-family: Arial, sans-serif; display:flex; flex-direction:column; align-items:center; padding:20px; }
+    h1 { margin-bottom:10px; }
+    #container { position:relative; width:640px; max-width:95%; }
+    video, canvas { width:100%; height:auto; border-radius:8px; }
+    #controls { margin-top:10px; display:flex; gap:10px; align-items:center; }
+    #countBox { margin-top:10px; padding:10px; border:1px solid #ddd; min-width:120px; text-align:center; font-size:24px; border-radius:6px; }
+    button { padding:8px 14px; font-size:16px; border-radius:6px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <h1>Model: MediaPipe Hands</h1>
+
+  <div id="container">
+    <video id="video" playsinline></video>
+    <canvas id="overlay"></canvas>
+  </div>
+
+  <div id="controls">
+    <button id="detectBtn">Start Detect</button>
+    <button id="stopBtn" disabled>Stop</button>
+    <div id="status">Status: Idle</div>
+  </div>
+
+  <div id="countBox">Fingers: <span id="fingerCount">0</span></div>
+
+  <!-- MediaPipe Hands and Camera Utils from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+  <script src="/static/js/hands_app.js"></script>
+</body>
+</html>
