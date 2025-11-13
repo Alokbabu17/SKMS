@@ -1,0 +1,231 @@
+Below is a **30-question MCQ quiz** covering **Trees (excluding B-trees and Splay trees)**, **Queues**, **Deques**, and **Linked Lists**.  
+All questions are **multiple-choice** with **one correct answer**.
+
+---
+
+### **TOPIC: TREES (15 Questions)**
+
+1. **What is the maximum number of children a node can have in a binary tree?**  
+   A) 1  
+   B) 2  
+   C) 3  
+   D) Unlimited  
+   **Answer: B**
+
+2. **In a full binary tree, every node has:**  
+   A) 0 or 2 children  
+   B) Exactly 1 child  
+   C) 0, 1, or 2 children  
+   D) At least 2 children  
+   **Answer: A**
+
+3. **The number of leaf nodes in a full binary tree with *n* nodes is:**  
+   A) (n+1)/2  
+   B) n/2  
+   C) (n-1)/2  
+   D) n  
+   **Answer: A**
+
+4. **Which traversal visits nodes in the order: Root → Left → Right?**  
+   A) Inorder  
+   B) Preorder  
+   C) Postorder  
+   D) Level-order  
+   **Answer: B**
+
+5. **In a binary search tree (BST), the inorder traversal gives nodes in:**  
+   A) Ascending order  
+   B) Descending order  
+   C) Random order  
+   D) Level-wise order  
+   **Answer: A**
+
+6. **A tree with *n* nodes has how many edges?**  
+   A) n  
+   B) n-1  
+   C) n+1  
+   D) 2n  
+   **Answer: B**
+
+7. **Which of the following is NOT a type of binary tree?**  
+   A) Complete  
+   B) Perfect  
+   C) Skewed  
+   D) Circular  
+   **Answer: D**
+
+8. **The height of a tree with only one node is:**  
+   A) 0  
+   B) 1  
+   C) -1  
+   D) Undefined  
+   **Answer: A** *(some conventions say 1; standard competitive coding uses 0)*
+
+9. **In a complete binary tree of height *h*, the maximum number of nodes is:**  
+   A) 2^h - 1  
+   B) 2^{h+1} - 1  
+   C) 2^h  
+   D) h  
+   **Answer: B**
+
+10. **Which data structure is typically used to implement level-order traversal?**  
+    A) Stack  
+    B) Queue  
+    C) Linked List  
+    D) Array  
+    **Answer: B**
+
+11. **A skewed binary tree has time complexity for search as:**  
+    A) O(1)  
+    B) O(log n)  
+    C) O(n)  
+    D) O(n²)  
+    **Answer: C**
+
+12. **The postorder traversal of a binary tree is: 4, 5, 2, 3, 1. What is the preorder?**  
+    *(Assume standard binary tree)*  
+    A) 1, 2, 4, 5, 3  
+    B) 1, 2, 3, 4, 5  
+    C) 4, 5, 2, 3, 1  
+    D) 1, 3, 2, 5, 4  
+    **Answer: A**
+
+13. **An AVL tree is a:**  
+    A) Binary tree  
+    B) Self-balancing BST  
+    C) Heap  
+    D) Graph  
+    **Answer: B**
+
+14. **Which of the following trees allows duplicate values?**  
+    A) Binary Search Tree  
+    B) AVL Tree  
+    C) General Binary Tree  
+    D) Red-Black Tree  
+    **Answer: C**
+
+15. **The minimum height of a binary tree with *n* nodes is:**  
+    A) log₂(n+1)  
+    B) n  
+    C) n-1  
+    D) 1  
+    **Answer: A** *(approximately ⌈log₂(n+1)⌉)*
+
+---
+
+### **TOPIC: QUEUE, DEQUE & LINKED LIST (15 Questions)**
+
+16. **Which principle does a queue follow?**  
+    A) LIFO  
+    B) FIFO  
+    C) Random  
+    D) Priority  
+    **Answer: B**
+
+17. **In a queue, insertion happens at:**  
+    A) Front  
+    B) Rear  
+    C) Middle  
+    D) Any position  
+    **Answer: B**
+
+18. **Which operation removes an element from a queue?**  
+    A) Push  
+    B) Pop  
+    C) Enqueue  
+    D) Dequeue  
+    **Answer: D**
+
+19. **A circular queue solves the problem of:**  
+    A) Memory wastage in linear queue  
+    B) Slow insertion  
+    C) Duplicate elements  
+    D) Overflow  
+    **Answer: A**
+
+20. **Which data structure is best for implementing a queue with dynamic size?**  
+    A) Array  
+    B) Stack  
+    C) Linked List  
+    D) Tree  
+    **Answer: C**
+
+21. **In a deque, elements can be added or removed from:**  
+    A) Only front  
+    B) Only rear  
+    C) Both ends  
+    D) Middle  
+    **Answer: C**
+
+22. **Which of the following is NOT an advantage of linked list over array?**  
+    A) Dynamic size  
+    B) Easy insertion/deletion  
+    C) Random access  
+    D) No memory wastage  
+    **Answer: C**
+
+23. **In a singly linked list, each node contains:**  
+    A) Data + Next pointer  
+    B) Data + Prev pointer  
+    C) Data only  
+    D) Data + Prev + Next  
+    **Answer: A**
+
+24. **To delete the first node in a singly linked list, you need:**  
+    A) Head pointer only  
+    B) Tail pointer only  
+    C) Both head and tail  
+    D) A temporary node  
+    **Answer: A**
+
+25. **What is the time complexity to insert at the beginning of a singly linked list?**  
+    A) O(1)  
+    B) O(n)  
+    C) O(log n)  
+    D) O(n²)  
+    **Answer: A**
+
+26. **A double-ended queue (deque) can be used to implement:**  
+    A) Stack  
+    B) Queue  
+    C) Both stack and queue  
+    D) Neither  
+    **Answer: C**
+
+27. **In a priority queue, elements are dequeued based on:**  
+    A) Insertion order  
+    B) Priority value  
+    C) Size  
+    D) Random  
+    **Answer: B**
+
+28. **Which of the following is true for a queue implemented using two stacks?**  
+    A) Enqueue is O(1), Dequeue is O(n)  
+    B) Enqueue is O(n), Dequeue is O(1)  
+    C) Both are O(1)  
+    D) Both are O(n)  
+    **Answer: A** *(amortized O(1) possible with optimization)*
+
+29. **In a doubly linked list, deleting a node requires updating:**  
+    A) Only next pointer  
+    B) Only prev pointer  
+    C) Both prev and next  
+    D) No pointers  
+    **Answer: C**
+
+30. **Which of the following can be implemented using a linked list but NOT efficiently with an array?**  
+    A) Stack  
+    B) Queue  
+    C) Frequent insertion at both ends  
+    D) Random access  
+    **Answer: C**
+
+---
+
+**Summary of Topics Covered:**  
+- Trees: Binary, BST, Traversals, Full/Complete, Height, AVL  
+- Queue: FIFO, Circular, Implementation  
+- Deque: Double-ended operations  
+- Linked List: Singly/Doubly, Insert/Delete, Time complexity
+
+Let me know if you want **answers with explanations**, **PDF version**, or **code-based questions**!
